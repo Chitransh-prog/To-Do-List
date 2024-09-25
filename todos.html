@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <style>
+    .sh {
+      height: 165px;
+      width: 165px;
+      background-color: #c3a51f;
+      text-align: center;
+      margin: auto;
+      width: 40%;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: #e5a3a3;
+    }
+    h1 {
+      text-align: center;
+    }
+    #tasks {
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="sh">
+      <h1>To Do List</h1>
+      <input type="text" id="input" placeholder="Add a new task">
+    </div>
+    <ol id="tasks"></ol>
+    <button type="button" onclick="clearLocalStorage()">Clear All</button>
+  </center>
+  <script src="todos.js"></script>
+</body>
+</html>
